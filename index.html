@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Foundry — Create your account</title>
+<meta name="description" content="Sign up for Foundry: a workspace for independent makers." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <aside class="intro" aria-hidden="false">
+    <div class="intro__inner">
+      <div class="mark">Foundry</div>
+      <h1 class="intro__headline">Cast your account.</h1>
+      <p class="intro__copy">
+        Foundry is where independent makers keep their tools, their notes and
+        their work-in-progress in one place. Registration takes about a minute.
+      </p>
+
+      <ol class="steps">
+        <li><span class="steps__num">01</span><span>Fill in your details</span></li>
+        <li><span class="steps__num">02</span><span>Confirm your password</span></li>
+        <li><span class="steps__num">03</span><span>Start building</span></li>
+      </ol>
+    </div>
+  </aside>
+
+  <main class="form-panel">
+    <div class="form-card">
+      <h2 class="form-card__title">Create account</h2>
+      <p class="form-card__subtitle">Already have one? <a href="#">Sign in</a>.</p>
+
+      <div id="formAlert" class="alert" role="alert" hidden></div>
+
+      <form id="registerForm" novalidate>
+
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Jordan Alvarez" required />
+          <p class="field__error" data-error-for="fullName"></p>
+        </div>
+
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="username" placeholder="jordan.a" required />
+          <p class="field__hint">3–20 characters: letters, numbers, dot or underscore.</p>
+          <p class="field__error" data-error-for="username"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="jordan@example.com" required />
+          <p class="field__error" data-error-for="email"></p>
+        </div>
+
+        <div class="field">
+          <label for="phoneNumber">Phone number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" placeholder="+1 555 010 2938" required />
+          <p class="field__error" data-error-for="phoneNumber"></p>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="password-wrap">
+              <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required />
+              <button type="button" class="toggle-visibility" data-target="password" aria-label="Show password">Show</button>
+            </div>
+            <p class="field__hint">At least 8 characters.</p>
+            <p class="field__error" data-error-for="password"></p>
+          </div>
+
+          <div class="field">
+            <label for="confirmPassword">Confirm password</label>
+            <div class="password-wrap">
+              <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" minlength="8" required />
+              <button type="button" class="toggle-visibility" data-target="confirmPassword" aria-label="Show password">Show</button>
+            </div>
+            <p class="field__error" data-error-for="confirmPassword"></p>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Create account</button>
+
+        <p class="fine-print">
+          Your account record stores your name, username, email, phone, an
+          auto-generated timestamp and a login status — never your raw password.
+        </p>
+      </form>
+    </div>
+  </main>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
