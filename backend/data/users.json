@@ -1,0 +1,15 @@
+{
+  "nextId": 2,
+  "users": [
+    {
+      "_id": 1,
+      "fullName": "sudeep",
+      "username": "sudeephiregoudar",
+      "email": "sudeephiregoudar@gmail.com",
+      "phoneNumber": "6360877442",
+      "password": "$2a$10$exbSVhCSvVD5WstSiA6DzuNcn9CHRNCpo1JosSSxZFT.CImIZjVAK",
+      "dateTime": "2026-09-27T14:48:35.306Z",
+      "loginStatus": "enabled"
+    }
+  ]
+}
