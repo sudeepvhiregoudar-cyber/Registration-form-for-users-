@@ -1,7 +1,7 @@
 // Point this at your deployed backend. GitHub Pages only serves static
 // files, so the Node/Express API from /backend must run somewhere else
 // (Render, Railway, a VM, etc.) and be reachable from this origin.
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL ="https://registration-form-for-users.onrender.com";
 
 const form = document.getElementById("registerForm");
 const submitBtn = document.getElementById("submitBtn");
